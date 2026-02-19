@@ -1,0 +1,143 @@
+/* ===== إعداد عام ===== */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Cairo", Tahoma, Arial, sans-serif;
+    direction: rtl;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background: url(img/ChatGPT\ Image\ 19\ فبراير\ 2026،\ 01_59_42\ م.png);
+    color:white;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: auto;
+    display: block;
+    /* opacity: 0.8; */
+}
+.list-logo{
+display: none;
+}
+/* ===== صندوق اللعبة ===== */
+.container{
+    backdrop-filter: blur(12px);
+    background: rgba(10,20,40,.55);
+    border-radius:20px;
+    padding:25px 30px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    max-width:520px;
+    width:100%;
+}
+
+/* ===== العنوان ===== */
+h1{
+    color:#6ec6ff;
+    margin-bottom:10px;
+    text-shadow:0 0 10px rgba(110,198,255,.6);
+}
+
+#level-info{
+    color:#8fffc1;
+    margin-bottom:5px;
+}
+
+#score{
+    margin-bottom:10px;
+}
+.category-screen{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+/* ===== الشبكة ===== */
+#wordsearch{
+    display:grid;
+    grid-template-columns: repeat(8, 42px);
+    gap:6px;
+    justify-content:center;
+    margin:20px auto;
+}
+
+/* ===== الخلايا ===== */
+.cell{
+    width:42px;
+    height:42px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.15);
+    background: rgba(255,255,255,.08);
+    cursor:pointer;
+    transition:.2s;
+}
+
+.cell:hover{
+    background: rgba(255,255,255,.2);
+}
+
+.cell.selected{
+    background:#4fc3f7;
+    color:#002c45;
+    box-shadow:0 0 10px #4fc3f7;
+}
+
+.word-found{
+    background:#7cffc4 !important;
+    color:#003b22;
+    font-weight:bold;
+}
+
+/* ===== الكلمات ===== */
+#words-list{
+    margin:15px 0;
+}
+
+#words-list span{
+    display:inline-block;
+    padding:6px 12px;
+    margin:5px;
+    border-radius:10px;
+    background:rgba(255,255,255,.12);
+}
+
+/* ===== الأزرار ===== */
+button{
+    padding:15px 28px;
+    border:none;
+    border-radius:10px;
+    margin:8px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#2196f3,#7c4dff);
+    color:white;
+    font-size:16px;
+}
+
+button:disabled{
+    opacity:.5;
+}
+@media  (max-width:786px) {
+    .list-logo{
+        display: block;
+    width: 120px;
+    height: auto;
+}
+.logo{
+    display: none;
+    /* opacity: 0.8; */
+}
+}
