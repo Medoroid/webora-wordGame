@@ -100,8 +100,56 @@ h1{
     background:#7cffc4 !important;
     color:#003b22;
     font-weight:bold;
+    text-decoration: line-through;
 }
-
+ .cell.found0 {
+     background:#ffe47f !important;
+     border-bottom: 4px solid #f8c800 !important;
+     color:#ca9300 !important;
+     font-weight:900 !important;
+}
+ .cell.found1 {
+     background:#ffd6e5 !important;
+     border-bottom: 4px solid #dc4488 !important;
+     color:#a11052 !important;
+     font-weight:900 !important;
+}
+ .cell.found2 {
+     background:#e3f9fd !important;
+     border-bottom: 4px solid #0aa0e3 !important;
+     color:#1e4179 !important;
+     font-weight:900 !important;
+}
+ .cell.found3 {
+     background:#dfcdfa !important;
+     border-bottom: 4px solid #aa5ef0 !important;
+     color:#663ca2 !important;
+     font-weight:900 !important;
+}
+ .cell.found4 {
+     background:#caffec !important;
+     border-bottom: 4px solid #1cd282 !important;
+     color:#13684a !important;
+     font-weight:900 !important;
+}
+ .cell.found5 {
+     background:#fff2ba !important;
+     border-bottom: 4px solid #e1b200 !important;
+     color:#715507 !important;
+     font-weight:900 !important;
+}
+ .cell.found6 {
+     background:#ffe49d !important;
+     border-bottom: 4px solid #ff9900 !important;
+     color:#ac6600 !important;
+     font-weight:900 !important;
+}
+ .cell.found7 {
+     background:#b1ffd0 !important;
+     border-bottom: 4px solid #2bba37 !important;
+     color:#126325 !important;
+     font-weight:900 !important;
+}
 /* ===== الكلمات ===== */
 #words-list{
     margin:15px 0;

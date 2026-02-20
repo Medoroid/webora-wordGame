@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ======================= */
   backBtn.addEventListener('click', () => {
     document.querySelector('.container').style.display = "none";
-    document.getElementById('category-screen').style.display = "flex";
+    document.getElementById('category-screen').style.display = "block";
   });
 
 });
